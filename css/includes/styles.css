@@ -1,0 +1,56 @@
+.is-style-button a {
+	background: var(--wp--preset--color--custom-color-10) !important;
+	color: var(--wp--preset--color--white) !important;
+	padding-inline: 1rem;
+	padding-block: 0.25rem;
+	border-radius: 0.2rem;
+
+	&:hover,
+	&:focus {
+		background: var(--wp--preset--color--custom-accent-eight) !important;
+	}
+}
+
+/*======== buttons ========*/
+.is-style-neon-button a {
+  padding: 3rem 3rem 3rem 2.25rem;
+  background-color: transparent;
+  background-image: url(https://us.wordcamp.org/2026/files/2026/05/pink-button-go-right-off.png);
+  background-size: cover; /* Stretches or shrinks to fit the button */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border: none;
+  border-width: 0;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--wp--preset--color--accent-3);
+    background-image: url(https://us.wordcamp.org/2026/files/2026/05/pink-button-go-right-on.png);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.is-style-postcard {
+  font-size:clamp(4.16rem, 4.16rem + ((1vw - 0.2rem) * 8.067), 9rem);
+  text-shadow: -1px 1px var(--wp--preset--color--contrast-3), -2px 2px var(--wp--preset--color--contrast-3), -3px 3px var(--wp--preset--color--contrast-3), -4px 4px var(--wp--preset--color--contrast-3), -5px 5px var(--wp--preset--color--contrast-3), -6px 6px var(--wp--preset--color--contrast-3), -7px 7px var(--wp--preset--color--contrast-3), -8px 8px var(--wp--preset--color--contrast-3), -9px 9px var(--wp--preset--color--contrast-3), -10px 10px var(--wp--preset--color--contrast-3), -11px 11px var(--wp--preset--color--contrast-3), -12px 12px var(--wp--preset--color--contrast-3), -13px 13px var(--wp--preset--color--contrast-3), -14px 14px var(--wp--preset--color--contrast-3), -15px 15px var(--wp--preset--color--contrast-3);
+  -webkit-text-stroke: 2px var(--wp--preset--color--contrast-3);
+  letter-spacing: -4%;
+  transform: rotate(-5deg) skew(-7deg);
+  margin-bottom: -2.75rem;
+  margin-top: -3rem;
+}
+
+@media (max-width: 781px) {
+
+  .is-style-postcard {
+    margin-bottom: -1.33rem;
+    margin-top: -1.5rem;
+  }
+}
+
+.is-style-postcard-small {
+  text-shadow: -1px -1px var(--wp--preset--color--contrast-3), -1px 1px var(--wp--preset--color--contrast-3), -2px 2px var(--wp--preset--color--contrast-3), -3px 3px var(--wp--preset--color--contrast-3), -4px 4px var(--wp--preset--color--contrast-3), -5px 5px var(--wp--preset--color--contrast-3), -6px 6px var(--wp--preset--color--contrast-3), -7px 7px var(--wp--preset--color--contrast-3);
+  transform: rotate(-5deg) skew(-7deg);
+  margin-bottom: 2rem;
+}

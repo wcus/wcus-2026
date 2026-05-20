@@ -200,33 +200,9 @@ input[type="reset"] {
 	}
 }
 
-@media (max-width: 999px) {
-
-	#subscribe .wp-block-columns {
-		flex-wrap: wrap !important;
-	}
-
-	#subscribe .wp-block-columns .wp-block-column {
-		flex-basis: 100% !important;
-	}
-}
-
-@media (max-width: 781px) {
-
-	/* Image links on homepage */
-	.image-links {
-		flex-wrap: wrap !important;
-
-		& img {
-			max-width: 180px !important;
-		}
-	}
-
-	footer.wp-block-template-part .wp-block-columns .wp-block-group {
-		justify-content: flex-start;
-	}
-}
-
-body.home footer.wp-block-template-part {
-	margin-top: 0 !important;
+footer.wp-block-template-part > .wp-block-group {
+  background-image: url(https://us.wordcamp.org/2026/files/2026/05/Rock_Formation-purple-palms.png);
+	background-position: right -75px bottom -5px;
+	background-repeat: no-repeat;
+  background-size: contain;
 }

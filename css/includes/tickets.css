@@ -19,6 +19,10 @@
 			border-bottom: 2px dashed var(--wp--preset--color--accent-3);
 		}
 
+		& tbody th {
+			text-align: left;
+		}
+
 		& th,
 		& td {
 			padding: 1em 0.5em;
@@ -85,7 +89,7 @@
 		background: var(--wp--preset--color--contrast);
 		color: var(--wp--preset--color--base);
 		font-size: 1.125rem;
-		font-family: var(--wp--preset--font-family--inclusive-sans);
+		font-family: var(--wp--preset--font-family--body);
 
 		&:hover,
 		&:focus {
@@ -150,6 +154,7 @@
 }
 
 /* Badge name question */
-#tix_attendee_questions-1-542 { /* stylelint-disable-line selector-id-pattern */
+#tix_attendee_questions-1-1484, /* stylelint-disable-line selector-id-pattern */
+#tix_attendee_questions-1-1485 { /* stylelint-disable-line selector-id-pattern */
 	max-width: 25ch;
 }

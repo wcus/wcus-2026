@@ -1,0 +1,456 @@
+/*
+Colors set by Global Styles:
+  --wp--preset--color--base: #f9f9f9;
+  --wp--preset--color--base-2: #fff;
+  --wp--preset--color--contrast: #c94a7c;
+  --wp--preset--color--contrast-2: #a13a5b;
+  --wp--preset--color--contrast-3: #6c214f;
+  --wp--preset--color--accent: #4a1a3c;
+  --wp--preset--color--accent-2: #341b48;
+  --wp--preset--color--accent-3: #f2be8b;
+  --wp--preset--color--accent-4: #e78c5e;
+  --wp--preset--color--accent-5: #e0715a;
+  --wp--preset--color--custom-color-6: #dd4f4b;
+  --wp--preset--color--custom-color-7: #d57b3b;
+  --wp--preset--color--custom-color-8: #c8857d;
+  --wp--preset--color--custom-color-9: #e37e92;
+  --wp--preset--color--custom-color-10: #a42f78;
+  --wp--preset--color--custom-color-11: #b3c4ba;
+  --wp--preset--color--custom-color-12: #575632;
+
+Font variable:
+	--wp--preset--font-family--engagement: Engagement, cursive;
+  --wp--preset--font-family--poppins: Poppins, sans-serif;
+  --wp--preset--font-family--anton: Anton, sans-serif;
+
+	--wp--preset--font-size--small: 0.9rem;
+	--wp--preset--font-size--medium: 1.05rem;
+	--wp--preset--font-size--large: clamp(1.39rem, 1.39rem + ((1vw - 0.2rem) * 0.767), 1.85rem);
+	--wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
+	--wp--preset--font-size--xx-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.283), 3.27rem);
+
+Spacing variables:
+	--wp--preset--spacing--20: min(1.5rem, 2vw);
+  --wp--preset--spacing--30: min(2.5rem, 3vw);
+  --wp--preset--spacing--40: min(4rem, 5vw);
+  --wp--preset--spacing--50: min(6.5rem, 8vw);
+  --wp--preset--spacing--60: min(10.5rem, 13vw);
+  --wp--preset--spacing--70: 3.38rem;
+  --wp--preset--spacing--80: 5.06rem;
+  --wp--preset--spacing--10: 1rem;
+*/
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+caption,
+figcaption,
+p,
+ul,
+ol,
+blockquote {
+	text-wrap: pretty;
+}
+
+/* Add default focus style. */
+
+a:focus,
+button:focus,
+.wp-element-button:focus,
+.wp-block-button__link:focus,
+.wp-block-details summary:focus,
+input:focus,
+input:focus-visible,
+select:focus,
+textarea:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	outline-color: var(--wp--preset--color--contrast-2);
+	outline-offset: 2px;
+	outline-style: dashed;
+	outline-width: 1px;
+}
+
+.has-base-color > :is(a:focus,button:focus,.wp-element-button:focus,.wp-block-button__link:focus,.wp-block-details summary:focus,input:focus,input:focus-visible,select:focus,textarea:focus,input[type="submit"]:focus,input[type="button"]:focus,input[type="reset"]:focus) {
+		outline-color: var(--wp--preset--color--base);
+	}
+
+a:focus,
+button:focus,
+.wp-element-button:focus,
+.wp-block-button__link:focus,
+.wp-block-details summary:focus {
+	border-radius: 2px;
+}
+
+.wp-block-file:not(.wp-element-button) {
+	font-size: inherit;
+}
+
+/* Style default form elements */
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	border: none;
+	background-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-family: var(--wp--preset--font-family--inclusive-sans);
+	font-size: var(--wp--preset--font-size--medium);
+	font-style: normal;
+	font-weight: 500;
+	line-height: inherit;
+	border-radius: 0;
+	padding-top: var(--wp--preset--spacing--10);
+	padding-right: var(--wp--preset--spacing--30);
+	padding-bottom: var(--wp--preset--spacing--10);
+	padding-left: var(--wp--preset--spacing--30);
+}
+
+:is(input[type="submit"],input[type="button"],input[type="reset"]):hover {
+		background-color: var(--wp--preset--color--contrast-2);
+		color: var(--wp--preset--color--base);
+	}
+
+:is(input[type="submit"],input[type="button"],input[type="reset"]):focus {
+		background-color: var(--wp--preset--color--contrast-2);
+		border-color: var(--wp--preset--color--contrast-2);
+		color: var(--wp--preset--color--base);
+	}
+
+:is(input[type="submit"],input[type="button"],input[type="reset"]):active {
+		background-color: var(--wp--preset--color--contrast);
+		color: var(--wp--preset--color--base);
+	}
+
+/* Jetpack Form overrides */
+
+:is(.contact-form .grunion-checkbox-multiple-options,.contact-form .grunion-radio-options) p.contact-form-field {
+		margin: 0;
+	}
+
+:is(.contact-form .grunion-field-select-wrap) select {
+		width: 100%;
+	}
+
+:is(.contact-form .grunion-field-checkbox-wrap) .contact-form__checkbox-wrap {
+		display: flex;
+		align-items: flex-start;
+	}
+
+:is(:is(.contact-form .grunion-field-checkbox-wrap) .contact-form__checkbox-wrap) input {
+			flex: 0;
+			margin-block-start: 0.5em;
+		}
+
+:is(:is(.contact-form .grunion-field-checkbox-wrap) .contact-form__checkbox-wrap) label {
+			line-height: inherit;
+		}
+
+.contact-form label span.grunion-label-required {
+	opacity: 0.9 !important;
+	color: var(--wp--preset--color--contrast-2);
+}
+
+:where(.wp-block-jetpack-button) .wp-block-button__link {
+	height: auto;
+}
+
+/* Block overrides */
+
+.wp-block-post-title {
+	text-wrap: balance;
+	overflow-wrap: initial;
+	word-break: initial;
+}
+
+.wp-block-site-title a:where(:not(.wp-element-button)):hover {
+	text-decoration: underline;
+}
+
+.wp-block-image a {
+	display: inline-block;
+}
+
+/* Style the details block better */
+
+.wp-block-details {
+	width: 100%;
+}
+
+.wp-block-details summary {
+		padding-inline: var(--wp--preset--spacing--20);
+	}
+
+footer.wp-block-template-part > .wp-block-group {
+  background: url(https://us.wordcamp.org/2026/files/2026/05/Rock_Formation-purple-palms.png) right -75px bottom -5px no-repeat;
+  background-size: contain;
+}
+
+.is-style-button a {
+	background: var(--wp--preset--color--custom-color-10) !important;
+	color: var(--wp--preset--color--white) !important;
+	padding-inline: 1rem;
+	padding-block: 0.25rem;
+	border-radius: 0.2rem;
+}
+
+:is(.is-style-button a):hover,:is(.is-style-button a):focus {
+		background: var(--wp--preset--color--custom-accent-eight) !important;
+	}
+
+/*======== buttons ========*/
+
+.is-style-neon-button a {
+  padding: 3rem 3rem 3rem 2.25rem;
+  background-color: transparent;
+  background-image: url(https://us.wordcamp.org/2026/files/2026/05/pink-button-go-right-off.png);
+  background-size: cover; /* Stretches or shrinks to fit the button */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border: none;
+  border-width: 0;
+}
+
+:is(.is-style-neon-button a):hover {
+    background-color: transparent;
+    color: var(--wp--preset--color--accent-3);
+    background-image: url(https://us.wordcamp.org/2026/files/2026/05/pink-button-go-right-on.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+.is-style-postcard {
+  font-size:clamp(4.16rem, 4.16rem + ((1vw - 0.2rem) * 8.067), 9rem);
+  text-shadow: -1px 1px var(--wp--preset--color--contrast-3), -2px 2px var(--wp--preset--color--contrast-3), -3px 3px var(--wp--preset--color--contrast-3), -4px 4px var(--wp--preset--color--contrast-3), -5px 5px var(--wp--preset--color--contrast-3), -6px 6px var(--wp--preset--color--contrast-3), -7px 7px var(--wp--preset--color--contrast-3), -8px 8px var(--wp--preset--color--contrast-3), -9px 9px var(--wp--preset--color--contrast-3), -10px 10px var(--wp--preset--color--contrast-3), -11px 11px var(--wp--preset--color--contrast-3), -12px 12px var(--wp--preset--color--contrast-3), -13px 13px var(--wp--preset--color--contrast-3), -14px 14px var(--wp--preset--color--contrast-3), -15px 15px var(--wp--preset--color--contrast-3);
+  -webkit-text-stroke: 2px var(--wp--preset--color--contrast-3);
+  letter-spacing: -4%;
+  transform: rotate(-5deg) skew(-7deg);
+  margin-bottom: -2.75rem;
+  margin-top: -3rem;
+}
+
+@media (max-width: 781px) {
+
+  .is-style-postcard {
+    margin-bottom: -1.33rem;
+    margin-top: -1.5rem;
+  }
+}
+
+.is-style-postcard-small {
+  text-shadow: -1px -1px var(--wp--preset--color--contrast-3), -1px 1px var(--wp--preset--color--contrast-3), -2px 2px var(--wp--preset--color--contrast-3), -3px 3px var(--wp--preset--color--contrast-3), -4px 4px var(--wp--preset--color--contrast-3), -5px 5px var(--wp--preset--color--contrast-3), -6px 6px var(--wp--preset--color--contrast-3), -7px 7px var(--wp--preset--color--contrast-3);
+  transform: rotate(-5deg) skew(-7deg);
+  margin-bottom: 2rem;
+}
+
+/* Fix submenu alignment */
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	margin-block-start: 6px;
+}
+
+/* Fix submenu focus spacing */
+
+.wp-block-navigation .wp-block-navigation__submenu-container a:focus,
+.wp-block-navigation__responsive-container.is-menu-open button:focus,
+.wp-block-navigation__responsive-container.is-menu-open li:not(.is-style-highlight) a:focus {
+	outline-offset: -2px;
+}
+
+/* Add navigation highlight style */
+
+.is-style-highlight a {
+	border: 2px solid var(--wp--preset--color--accent);
+	background: var(--wp--preset--color--custom-accent-eight) !important;
+	color: inherit !important;
+	padding-inline: 1rem;
+	padding-block: 0.25rem;
+	border-radius: 0.2rem;
+}
+
+:is(.is-style-highlight a):hover,:is(.is-style-highlight a):focus {
+		background: var(--wp--preset--color--custom-accent-seven) !important;
+	}
+
+@media (max-width: 960px) and (min-width: 600px) {
+
+	header.wp-block-template-part > .wp-block-group .is-layout-flex {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 599px) {
+
+		:is(.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content) .wp-block-navigation__container,:is(.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content) .wp-block-navigation__submenu-container {
+			gap: 0;
+		}
+
+		:is(.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content) .has-child .wp-block-navigation__submenu-container {
+			margin-block: 0 0.75rem;
+			margin-inline: 0.75rem;
+			padding-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+			border-left: 2px solid var(--wp--preset--color--custom-accent-six);
+		}
+
+		:is(.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content) .wp-block-navigation-item__content {
+			padding: 0.5rem 0.75rem;
+		}
+}
+
+/* Tickets form */
+
+#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary,#tix .tix-submit,#tix .tix-attendee-form {
+		width: 100%;
+	}
+
+#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary {
+		border-spacing: 0;
+		border-collapse: collapse;
+	}
+
+:is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) thead th {
+			border-bottom: 2px dashed var(--wp--preset--color--accent-3);
+		}
+
+:is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) tbody th {
+			text-align: left;
+		}
+
+:is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) th,:is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) td {
+			padding: 1em 0.5em;
+		}
+
+:is(#tix .tix-attendee-form),:is(#tix .tix-attendee-form) tr,:is(#tix .tix-attendee-form) td,:is(#tix .tix-attendee-form) th {
+			display: block;
+			width: 100%;
+		}
+
+:is(#tix .tix-attendee-form) .tix-left {
+			padding-bottom: 0;
+			margin-bottom: 0.25rem;
+		}
+
+:is(#tix .tix-attendee-form) .tix-right {
+			padding-left: 0;
+		}
+
+:is(#tix .tix-attendee-form) input[type="text"],:is(#tix .tix-attendee-form) input[type="email"],:is(#tix .tix-attendee-form) input[type="url"],:is(#tix .tix-attendee-form) textarea {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+:is(#tix .tix-attendee-form) fieldset {
+			margin-top: 0.5rem;
+		}
+
+:is(#tix .tix-attendee-form) fieldset label {
+			display: inline-block;
+			margin-bottom: 0.5em;
+			font-size: 1rem;
+			vertical-align: middle;
+		}
+
+:is(:is(#tix .tix-attendee-form) fieldset label) input {
+				margin-right: 0.5rem;
+			}
+
+@media (max-width: 600px) {
+
+:is(#tix .tix-attendee-form) fieldset label {
+				font-size: inherit;
+		}
+			}
+
+#tix .tix-submit {
+		float: none;
+		margin: var(--wp--preset--spacing--30) auto var(--wp--preset--spacing--50);
+	}
+
+#tix .tix-submit .tix-checkout-button {
+		text-transform: none;
+		letter-spacing: 0;
+		border-radius: 2px;
+		padding: 0.5rem 1rem;
+		background: var(--wp--preset--color--contrast);
+		color: var(--wp--preset--color--base);
+		font-size: 1.125rem;
+		font-family: var(--wp--preset--font-family--body);
+	}
+
+:is(#tix .tix-submit .tix-checkout-button):hover,:is(#tix .tix-submit .tix-checkout-button):focus {
+			background: var(--wp--preset--color--contrast-2);
+		}
+
+.tix-column-price,
+.tix-column-per-ticket,
+.tix-column-quantity,
+.tix-row-total {
+	text-align: right;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) input[type="text"],:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) input[type="email"],:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) input[type="url"],:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) textarea {
+		padding: 0.5em;
+	}
+
+:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) select {
+		padding: 0.5em;
+	}
+
+:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) tr > * {
+		padding-bottom: 1em;
+	}
+
+:is(.tix-ticket-form,.tix-private-form,.tix-attendee-form,.tix-receipt-form) .tix-right {
+		padding-left: 2em;
+	}
+
+.tix-row-coupon td {
+	padding-inline: 0;
+}
+
+#tix-coupon-container[style*="block"] {
+	display: flex !important;
+	justify-content: flex-end;
+}
+
+#tix-coupon-container[style*="block"] input[type="text"] {
+		flex: 1;
+		font-size: var(--wp--preset--font-size--small);
+	}
+
+#tix-coupon-container[style*="block"] input[type="submit"] {
+		padding-block: calc(var(--wp--preset--spacing--10) / 2);
+		font-size: var(--wp--preset--font-size--small);
+	}
+
+/* Badge name question */
+
+#tix_attendee_questions-1-1484, /* stylelint-disable-line selector-id-pattern */
+#tix_attendee_questions-1-1485 { /* stylelint-disable-line selector-id-pattern */
+	max-width: 25ch;
+}
+
+/* @import "includes/attendees.css"; */
+
+/* @import "includes/people.css"; */
+
+/* @import "includes/schedule.css"; */

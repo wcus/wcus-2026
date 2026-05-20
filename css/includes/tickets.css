@@ -1,0 +1,155 @@
+/* Tickets form */
+#tix {
+
+	& .tix-ticket-form,
+	& .tix-tickets-list,
+	& .tix-order-summary,
+	& .tix-submit,
+	& .tix-attendee-form {
+		width: 100%;
+	}
+
+	& .tix-ticket-form,
+	& .tix-tickets-list,
+	& .tix-order-summary {
+		border-spacing: 0;
+		border-collapse: collapse;
+
+		& thead th {
+			border-bottom: 2px dashed var(--wp--preset--color--accent-3);
+		}
+
+		& th,
+		& td {
+			padding: 1em 0.5em;
+		}
+	}
+
+	& .tix-attendee-form {
+
+		&,
+		& tr,
+		& td,
+		& th {
+			display: block;
+			width: 100%;
+		}
+
+		& .tix-left {
+			padding-bottom: 0;
+			margin-bottom: 0.25rem;
+		}
+
+		& .tix-right {
+			padding-left: 0;
+		}
+
+		& input[type="text"],
+		& input[type="email"],
+		& input[type="url"],
+		& textarea, {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		& fieldset {
+			margin-top: 0.5rem;
+		}
+
+		& fieldset label {
+			display: inline-block;
+			margin-bottom: 0.5em;
+			font-size: 1rem;
+			vertical-align: middle;
+
+			& input {
+				margin-right: 0.5rem;
+			}
+
+			@media (max-width: 600px) {
+				font-size: inherit;
+			}
+		}
+	}
+
+	& .tix-submit {
+		float: none;
+		margin: var(--wp--preset--spacing--30) auto var(--wp--preset--spacing--50);
+	}
+
+	& .tix-submit .tix-checkout-button {
+		text-transform: none;
+		letter-spacing: 0;
+		border-radius: 2px;
+		padding: 0.5rem 1rem;
+		background: var(--wp--preset--color--contrast);
+		color: var(--wp--preset--color--base);
+		font-size: 1.125rem;
+		font-family: var(--wp--preset--font-family--inclusive-sans);
+
+		&:hover,
+		&:focus {
+			background: var(--wp--preset--color--contrast-2);
+		}
+	}
+}
+
+.tix-column-price,
+.tix-column-per-ticket,
+.tix-column-quantity,
+.tix-row-total {
+	text-align: right;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.tix-ticket-form,
+.tix-private-form,
+.tix-attendee-form,
+.tix-receipt-form {
+
+	& input[type="text"],
+	& input[type="email"],
+	& input[type="url"],
+	& textarea {
+		padding: 0.5em;
+	}
+
+	& select {
+		padding: 0.5em;
+	}
+
+	& tr > * {
+		padding-bottom: 1em;
+	}
+
+	& .tix-right {
+		padding-left: 2em;
+	}
+}
+
+.tix-row-coupon td {
+	padding-inline: 0;
+}
+
+#tix-coupon-container[style*="block"] {
+	display: flex !important;
+	justify-content: flex-end;
+
+	input[type="text"] {
+		flex: 1;
+		font-size: var(--wp--preset--font-size--small);
+	}
+
+	input[type="submit"] {
+		padding-block: calc(var(--wp--preset--spacing--10) / 2);
+		font-size: var(--wp--preset--font-size--small);
+	}
+}
+
+/* Badge name question */
+#tix_attendee_questions-1-542 { /* stylelint-disable-line selector-id-pattern */
+	max-width: 25ch;
+}

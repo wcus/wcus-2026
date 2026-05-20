@@ -1,0 +1,57 @@
+/* Fix submenu alignment */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	margin-block-start: 6px;
+}
+
+/* Fix submenu focus spacing */
+.wp-block-navigation .wp-block-navigation__submenu-container a:focus,
+.wp-block-navigation__responsive-container.is-menu-open button:focus,
+.wp-block-navigation__responsive-container.is-menu-open li:not(.is-style-highlight) a:focus {
+	outline-offset: -2px;
+}
+
+/* Add navigation highlight style */
+.is-style-highlight a {
+	border: 2px solid var(--wp--preset--color--accent);
+	background: var(--wp--preset--color--custom-accent-eight) !important;
+	color: inherit !important;
+	padding-inline: 1rem;
+	padding-block: 0.25rem;
+	border-radius: 0.2rem;
+
+	&:hover,
+	&:focus {
+		background: var(--wp--preset--color--custom-accent-seven) !important;
+	}
+}
+
+@media (max-width: 960px) and (min-width: 600px) {
+
+	header.wp-block-template-part > .wp-block-group .is-layout-flex {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 599px) {
+
+	.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+
+		& .wp-block-navigation__container,
+		& .wp-block-navigation__submenu-container {
+			gap: 0;
+		}
+
+		& .has-child .wp-block-navigation__submenu-container {
+			margin-block: 0 0.75rem;
+			margin-inline: 0.75rem;
+			padding-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+			border-left: 2px solid var(--wp--preset--color--custom-accent-six);
+		}
+
+		& .wp-block-navigation-item__content {
+			padding: 0.5rem 0.75rem;
+		}
+	}
+}

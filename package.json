@@ -1,0 +1,19 @@
+{
+  "name": "wcus-2025",
+  "scripts": {
+    "build": "postcss css/*.css --dir ./ --no-map",
+    "postbuild": "cp style.css /Users/ryelle/Applications/chrome-exts/css/wcus.css",
+    "start": "postcss css/*.css --dir ./ --watch",
+    "lint": "stylelint css"
+  },
+  "browserslist": "> 1% and not ie <= 11",
+  "dependencies": {
+    "@wordpress/stylelint-config": "23.38.0",
+    "autoprefixer": "10.5.0",
+    "postcss": "8.5.15",
+    "postcss-cli": "11.0.1",
+    "postcss-import": "16.1.1",
+    "postcss-nesting": "14.0.0",
+    "stylelint": "16.26.1"
+  }
+}

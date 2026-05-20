@@ -1,0 +1,14 @@
+{
+  "extends": "@wordpress/stylelint-config",
+  "rules": {
+    "at-rule-empty-line-before": [ "always", {
+      "except": [ "blockless-after-blockless", "first-nested" ],
+      "ignore": [ "after-comment" ],
+      "ignoreAtRules": [ "else", "include" ]
+    } ],
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": true,
+    "value-no-vendor-prefix": true
+  }
+}

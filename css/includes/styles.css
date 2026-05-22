@@ -1,3 +1,9 @@
+/* Header */
+.has-header-hero-background {
+  background-image: url(https://wc-us.org/wp-content/uploads/2026/05/hero-wcus26.svg);
+  background-size: cover;
+}
+
 .is-style-button a {
 	background: var(--wp--preset--color--custom-color-10) !important;
 	color: var(--wp--preset--color--white) !important;
@@ -7,7 +13,7 @@
 
 	&:hover,
 	&:focus {
-		background: var(--wp--preset--color--custom-accent-eight) !important;
+		background: var(--wp--preset--color--contrast-3) !important;
 	}
 }
 
@@ -24,7 +30,6 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--wp--preset--color--accent-3);
     background-image: url(https://us.wordcamp.org/2026/files/2026/05/pink-button-go-right-on.png);
     background-size: cover;
     background-position: center;
@@ -38,14 +43,14 @@
   letter-spacing: -4%;
   transform: rotate(-5deg) skew(-7deg);
   margin-bottom: -2.75rem;
-  margin-top: -3rem;
+  margin-top: -3rem !important;
 }
 
 @media (max-width: 781px) {
 
   .is-style-postcard {
     margin-bottom: -1.33rem;
-    margin-top: -1.5rem;
+    margin-top: -1.5rem !important;
   }
 }
 

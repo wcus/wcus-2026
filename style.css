@@ -63,9 +63,8 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"] {
 	border: none;
-	background-color: var(--wp--preset--color--contrast);
+	background-color: var(--wp--preset--color--contrast-3);
 	color: var(--wp--preset--color--base);
-	font-family: var(--wp--preset--font-family--inclusive-sans);
 	font-size: var(--wp--preset--font-size--medium);
 	font-style: normal;
 	font-weight: 500;
@@ -89,7 +88,7 @@ input[type="reset"] {
 	}
 
 :is(input[type="submit"],input[type="button"],input[type="reset"]):active {
-		background-color: var(--wp--preset--color--contrast);
+		background-color: var(--wp--preset--color--contrast-3);
 		color: var(--wp--preset--color--base);
 	}
 
@@ -189,6 +188,7 @@ footer.wp-block-template-part > .wp-block-group {
   background-repeat: no-repeat; 
   border: none;
   border-width: 0;
+  aspect-ratio: 2;
 }
 
 :is(.is-style-neon-button a):hover {
@@ -197,6 +197,35 @@ footer.wp-block-template-part > .wp-block-group {
     background-size: cover;
     background-position: center;
   }
+
+.is-deep-purple-button .wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--contrast-2) !important;
+  border-color: var(--wp--preset--color--contrast-2) !important;
+  color: var(--wp--preset--color--base-2) !important;
+}
+
+@media (max-width: 600px) {
+
+  .wp-block-buttons:has(.is-style-neon-button) {
+    margin-block-start: 0 !important;
+    justify-content: center;
+  }
+
+  .is-style-neon-button {
+    width: unset !important;
+  }
+}
+
+@media (min-width: 782px) {
+
+  .is-button-row {
+    display: flex;
+  }
+
+    .is-button-row .wp-block-button,.is-button-row .wp-block-button__link {
+      flex: 1;
+    }
+}
 
 .is-style-postcard {
   font-size:clamp(4.16rem, 4.16rem + ((1vw - 0.2rem) * 8.067), 9rem);

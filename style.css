@@ -151,6 +151,8 @@ input[type="reset"] {
 		padding-inline: var(--wp--preset--spacing--20);
 	}
 
+footer.wp-block-template-part { margin-top: 0; }
+
 footer.wp-block-template-part > .wp-block-group {
   background-image: url(https://us.wordcamp.org/2026/files/2026/05/Rock_Formation-purple-palms.png);
 	background-position: right -75px bottom -5px;
@@ -251,6 +253,16 @@ footer.wp-block-template-part > .wp-block-group {
   margin-bottom: 2rem;
 }
 
+.wp-block-wordcamp-avatar {
+	max-width: 100%;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+}
+
+.wp-block-wordcamp-avatar img {
+    height: auto;
+  }
+
 /* Fix submenu alignment */
 
 .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
@@ -329,6 +341,10 @@ footer.wp-block-template-part > .wp-block-group {
 :is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) th,:is(#tix .tix-ticket-form,#tix .tix-tickets-list,#tix .tix-order-summary) td {
 			padding: 1em 0.5em;
 		}
+
+#tix .tix-tickets-list thead .tix-column-description {
+		font-weight: 700;
+	}
 
 :is(#tix .tix-attendee-form),:is(#tix .tix-attendee-form) tr,:is(#tix .tix-attendee-form) td,:is(#tix .tix-attendee-form) th {
 			display: block;
@@ -501,12 +517,12 @@ footer.wp-block-template-part > .wp-block-group {
 			height: 96px;
 			width: 96px;
 			z-index: -1;
-      background-color: var(--wp--preset--color--custom-color-10);
+			background-color: var(--wp--preset--color--custom-color-10);
 
-      /*
-      background-size: contain;
-      background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
-      */
+			/*
+			background-size: contain;
+			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
+			*/
 		}
 
 #tix-attendees#tix-attendees .avatar {

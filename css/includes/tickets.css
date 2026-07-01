@@ -29,6 +29,10 @@
 		}
 	}
 
+	& .tix-tickets-list thead .tix-column-description {
+		font-weight: 700;
+	}
+
 	& .tix-attendee-form {
 
 		&,

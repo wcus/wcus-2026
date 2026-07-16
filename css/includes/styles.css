@@ -90,3 +90,11 @@
   transform: rotate(-5deg) skew(-7deg);
   margin-bottom: 2rem;
 }
+
+.is-style-query-cards {
+
+  & li { 
+    background: var(--wp--preset--color--base-2);
+    border: 1px solid var(--wp--preset--color--custom-color-9);
+  }
+}

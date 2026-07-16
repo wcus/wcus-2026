@@ -56,7 +56,7 @@
 	& .avatar {
 		margin: 0 auto 0.5rem;
 		height: auto;
-		width: auto;
+		width: 150px;
 		float: none;
 		display: block;
 	}
@@ -81,4 +81,16 @@
 	& .tix-wordpress-org-profile-url:has(+ .tix-company-or-personal-website) {
 		display: none;
 	}
+}
+
+:is(#tix-attendees#tix-attendees li)::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	inset: 0;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	background-image: url(//us.wordcamp.org/2026/files/2026/07/MotelSign_Stars-11.png);
+	background-size: cover;
 }

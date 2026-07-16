@@ -153,7 +153,7 @@ input[type="reset"] {
 
 footer.wp-block-template-part { margin-top: 0; }
 
-footer.wp-block-template-part > .wp-block-group {
+.purple-footer {
   background-image: url(https://us.wordcamp.org/2026/files/2026/05/Rock_Formation-purple-palms.png);
 	background-position: right -75px bottom -5px;
 	background-repeat: no-repeat;
@@ -163,7 +163,7 @@ footer.wp-block-template-part > .wp-block-group {
 /* Header */
 
 .has-header-hero-background {
-  background-image: url(https://wc-us.org/wp-content/uploads/2026/05/hero-wcus26.svg);
+  background-image: url(https://wc-us.org/wp-content/uploads/2026/07/hero-wcus26-yellow-rays.svg);
   background-size: cover;
 }
 
@@ -519,15 +519,12 @@ footer.wp-block-template-part > .wp-block-group {
 			position: absolute;
 			inset: 0;
 			margin: 0 auto;
-			height: 96px;
-			width: 96px;
+			width: 150px;
+			height: 150px;
 			z-index: -1;
 			background-color: var(--wp--preset--color--custom-color-10);
-
-			/*
-			background-size: contain;
-			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
-			*/
+			background-image: url(//us.wordcamp.org/2026/files/2026/07/MotelSign_Stars-11.png);
+			background-size: cover;
 		}
 
 #tix-attendees#tix-attendees .avatar {
@@ -558,18 +555,6 @@ footer.wp-block-template-part > .wp-block-group {
 #tix-attendees#tix-attendees .tix-wordpress-org-profile-url:has( + .tix-company-or-personal-website) {
 		display: none;
 	}
-
-:is(#tix-attendees#tix-attendees li)::before {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	inset: 0;
-	margin: 0 auto;
-	width: 150px;
-	height: 150px;
-	background-image: url(//us.wordcamp.org/2026/files/2026/07/MotelSign_Stars-11.png);
-	background-size: cover;
-}
 
 .wordcamp-schedule__date {
 	display: none;

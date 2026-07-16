@@ -159,7 +159,7 @@ input[type="reset"] {
 
 footer.wp-block-template-part { margin-top: 0; }
 
-footer.wp-block-template-part > .wp-block-group {
+.purple-footer {
   background-image: url(https://us.wordcamp.org/2026/files/2026/05/Rock_Formation-purple-palms.png);
 	background-position: right -75px bottom -5px;
 	background-repeat: no-repeat;

@@ -41,15 +41,12 @@
 			position: absolute;
 			inset: 0;
 			margin: 0 auto;
-			height: 96px;
-			width: 96px;
+			width: 150px;
+			height: 150px;
 			z-index: -1;
 			background-color: var(--wp--preset--color--custom-color-10);
-
-			/*
-			background-size: contain;
-			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
-			*/
+			background-image: url(//us.wordcamp.org/2026/files/2026/07/MotelSign_Stars-11.png);
+			background-size: cover;
 		}
 	}
 
@@ -81,16 +78,4 @@
 	& .tix-wordpress-org-profile-url:has(+ .tix-company-or-personal-website) {
 		display: none;
 	}
-}
-
-:is(#tix-attendees#tix-attendees li)::before {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	inset: 0;
-	margin: 0 auto;
-	width: 150px;
-	height: 150px;
-	background-image: url(//us.wordcamp.org/2026/files/2026/07/MotelSign_Stars-11.png);
-	background-size: cover;
 }

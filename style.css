@@ -556,13 +556,15 @@ footer.wp-block-template-part { margin-top: 0; }
 		display: none;
 	}
 
+/* stylelint-disable selector-id-pattern */
+
 .wordcamp-schedule__date {
 	display: none;
 }
 
 .wordcamp-schedule__day h3,
 .wordcamp-schedule__day h4 {
-	font-family: 'Poppins';
+	font-family: Poppins, sans-serif;
 	font-weight: 600;
 }
 
@@ -573,14 +575,31 @@ footer.wp-block-template-part { margin-top: 0; }
 	font-weight: 600;
 }
 
-#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__column-header {
-		background: var(--wp--preset--color--custom-color-10);
+#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__column-header {
+		background: var(--wp--preset--color--custom-color-12);
 		color: var(--wp--preset--color--white);
 	}
 
+#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__session {
+		outline: 1px solid var(--wp--preset--color--custom-color-12);
+	}
+
+#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__column-header {
+	background: var(--wp--preset--color--custom-color-10);
+	color: var(--wp--preset--color--white);
+	}
+
+#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__session {
+		outline: 1px solid var(--wp--preset--color--custom-color-10);
+	}
+
 #wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__column-header {
-		background: var(--wp--preset--color--custom-color-14);
-		color: var(--wp--preset--color--white);
+	background: var(--wp--preset--color--custom-color-14);
+	color: var(--wp--preset--color--white);
+	}
+
+#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__session {
+		outline: 1px solid var(--wp--preset--color--custom-color-14);
 	}
 
 #wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__column-header {
@@ -588,6 +607,155 @@ footer.wp-block-template-part { margin-top: 0; }
 		color: var(--wp--preset--color--white);
 	}
 
+#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__session {
+		outline: 1px solid var(--wp--preset--color--contrast-3);
+	}
+
 .wordcamp-schedule__session.is-spanning-some-tracks .wordcamp-schedule__session-title {
 		justify-content: center;
+	}
+
+/* Specificity hack */
+
+.wordcamp-schedule:not(#hack) {
+	font-size: 0.9rem;
+}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__date {
+		display: none;
+	}
+
+.wordcamp-schedule:not(#hack) a:where(:not(.wp-element-button)) {
+		color: var(--wp--preset--color--accent-2);
+	}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__day {
+		background-color: #f5e3d2;
+	}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session,.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+		padding: 1.5rem;
+		box-shadow: none;
+	}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+		font-size: 1em;
+		text-align: revert;
+	}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session {
+		font-size: inherit;
+		position: relative;
+		background: #f5e3d2;
+	}
+
+:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) > * {
+			margin: 0;
+		}
+
+:is(:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) > *) + * {
+				margin-top: 0.5rem;
+			}
+
+:is(:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session):where(.is-type-session):hover,:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session):where(.is-type-session):focus-within) a:where(:not(.wp-element-button)) {
+				color: var(--wp--preset--color--accent-2) !important;
+			}
+
+:is(:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session):where(.is-type-session):hover,:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session):where(.is-type-session):focus-within):not(.wcb-favourite-session) .wcb-session-favourite-icon a {
+				background-image: url(https://wc-us.org/wp-content/uploads/2026/07/star-outline.svg);
+			}
+
+:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) .wcb-session-favourite-icon {
+			font-size: 16px;
+		}
+
+:is(:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) .wcb-session-favourite-icon) a {
+				display: block;
+				height: 24px;
+				width: 24px;
+				background-image: url(https://wc-us.org/wp-content/uploads/2026/07/star-outline.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 24px 24px;
+			}
+
+:is(:is(:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) .wcb-session-favourite-icon) a) .dashicon {
+					display: none;
+				}
+
+.wcb-favourite-session:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) {
+			outline: 3px solid var(--wp--preset--color--accent);
+			outline-offset: -5px;
+		}
+
+.wcb-favourite-session:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session) .wcb-session-favourite-icon a {
+				background-image: url(https://wc-us.org/wp-content/uploads/2026/07/star-filled.svg);
+			}
+
+:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session)::before {
+			display: inline-block;
+			margin-block-end: 0.5rem;
+			padding: 0 10px;
+			background: var(--wp--preset--color--custom-base-three);
+			border: 1px solid var(--wp--preset--color--accent-2);
+			font-size: 1em;
+		}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session-speakers a {
+		position: relative;
+		z-index: 1;
+	}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session-category {
+		color: inherit;
+		font-style: normal;
+	}
+
+@media (max-width: 1000px) {
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__day {
+			display: revert;
+			border-bottom: none;
+		}
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__column-header {
+			display: none;
+		}
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__session,.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+			box-shadow: none;
+		}
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+			position: sticky;
+			top: var(--wp-admin--admin-bar--height, 0);
+			z-index: 10;
+			padding-block: 0.5rem;
+			font-size: 1em;
+			background-color: var(--wp--preset--color--base-2);
+		}
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__session::before {
+			display: inline-block;
+			margin-block-end: 4px;
+			font-size: 1em;
+		}
+	}
+
+@media (max-width: 600px) {
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+			top: 0;
+		}
+	}
+
+@media (max-width: 549px) {
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__session,.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+			border: none;
+		}
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
+			margin-top: 0;
+		}
 	}

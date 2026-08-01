@@ -795,20 +795,15 @@ footer.wp-block-template-part { margin-top: 0; }
 	color: var(--wc-title);
 }
 
-table.wc-schedule-table {
-	width: 100%;
-	table-layout: auto;
-	border-collapse: separate;
-	border-spacing: 0;
-	box-sizing: border-box;
+.wc-schedule-table {
 	background-color: var(--wc-cream);
 }
 
-table.wc-schedule-table thead {
+.wc-schedule-table thead {
 		border-bottom: 0;
 	}
 
-table.wc-schedule-table thead th {
+.wc-schedule-table thead th {
 		position: sticky !important;
 		top: 0;
 		z-index: 2;

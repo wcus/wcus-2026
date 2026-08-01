@@ -16,12 +16,7 @@
 	color: var(--wc-title);
 }
 
-table.wc-schedule-table {
-	width: 100%;
-	table-layout: auto;
-	border-collapse: separate;
-	border-spacing: 0;
-	box-sizing: border-box;
+.wc-schedule-table {
 	background-color: var(--wc-cream);
 
 	& thead {

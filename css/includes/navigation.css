@@ -1,6 +1,7 @@
 /* Fix submenu alignment */
 .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
 	margin-block-start: 6px;
+	z-index: 10;
 }
 
 /* Fix submenu focus spacing */
@@ -22,6 +23,22 @@
 	&:hover,
 	&:focus {
 		background: var(--wp--preset--color--custom-accent-seven) !important;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.wp-block-navigation__submenu-container {
+		width: max-content;
+		min-width: 100%;
+	}
+
+	.wp-block-navigation__submenu-container .wp-block-navigation-item__label {
+		white-space: nowrap;
+	}
+
+	.wp-block-navigation-item.has-child {
+		position: relative;
 	}
 }
 

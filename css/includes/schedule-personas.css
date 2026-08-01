@@ -1,0 +1,154 @@
+/** 
+ * WordCamp US 2026 schedule table
+ * Colors matched to the live theme at us.wordcamp.org/2026/schedule/
+ * using the site's own confirmed palette values:
+ *
+ * - Contributor Day = custom-color-12, 
+ * - Showcase Day = custom-color-10,
+ * - Day 1 = custom-color-14, 
+ * - Day 2 = contrast-3
+*/
+
+.wc-schedule-wrap {
+	--wc-cream: #f5e3d2;
+	--wc-cream-alt: #f5e3d2;
+	--wc-title: #3a1a34;
+	--wc-meta: #6b5f52;
+	--wc-day-accent: #3a1a34;
+
+	--wc-contributor: var(--wp--preset--color--custom-color-12);
+	--wc-showcase: var(--wp--preset--color--custom-color-10);
+	--wc-day-one: var(--wp--preset--color--custom-color-14);
+	--wc-day-two: var(--wp--preset--color--contrast-3);
+}
+
+.wc-schedule-wrap h2 {
+	margin-top: 2.5rem;
+	color: var(--wc-title);
+}
+
+table.wc-schedule-table {
+	width: 100%;
+	table-layout: auto;
+	border-collapse: separate;
+	border-spacing: 0;
+	box-sizing: border-box;
+	background-color: var(--wc-cream);
+
+	& thead {
+		border-bottom: 0;
+	}
+
+	& thead th {
+		position: sticky !important;
+		top: 0;
+		z-index: 2;
+		box-sizing: border-box;
+		color: #fff;
+		padding: 12px 16px;
+		background-color: var(--wc-day-accent);
+		border: 1px solid var(--wc-day-accent) !important;
+	}
+}
+
+/* Per-day header colors, and matching border color per day */
+.wc-day-contributor {
+	--wc-day-accent: var(--wc-contributor);
+}
+
+.wc-day-showcase {
+	--wc-day-accent: var(--wc-showcase);
+}
+
+.wc-day-one {
+	--wc-day-accent: var(--wc-day-one);
+}
+
+.wc-day-two {
+	--wc-day-accent: var(--wc-day-two);
+}
+
+.wc-schedule-table td {
+	box-sizing: border-box;
+	padding: 14px 16px;
+	border: 1px solid var(--wc-day-accent) !important;
+	vertical-align: top;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	background-color: var(--wc-cream) !important;
+
+	&.wc-time,
+	&:first-child {
+		color: var(--wc-title);
+		white-space: nowrap;
+	}
+
+	& .wc-session-title {
+		display: block;
+		color: var(--wc-title);
+	}
+
+	& .wc-session-speakers {
+		display: block;
+		margin-top: 0.3rem;
+		color: var(--wc-meta);
+	}
+
+	&.wc-track {
+		color: var(--wc-title);
+	}
+}
+
+/* ============================================
+   Responsive: stack fully below 700px, matching
+   the real site's mobile layout — Time as a plain
+   divider line, the rest of the row grouped into
+   one shaded card below it. No field labels.
+   ============================================ */
+@media (max-width: 700px) {
+
+	.wc-schedule-table,
+	.wc-schedule-table thead,
+	.wc-schedule-table tbody,
+	.wc-schedule-table tr,
+	.wc-schedule-table th,
+	.wc-schedule-table td {
+		display: block;
+		width: 100%;
+	}
+
+	.wc-schedule-table thead {
+		display: none;
+	}
+
+	.wc-schedule-table tbody tr {
+		margin-bottom: 1rem;
+		border: 1px solid var(--wc-day-accent);
+	}
+
+	.wc-schedule-table td {
+		border: none;
+		padding: 12px 16px;
+	}
+
+	/* Time: plain divider line, no shading */
+	.wc-schedule-table td:first-child {
+		font-weight: 700;
+		background-color: var(--wc-cream) !important;
+		border-bottom: 1px solid var(--wc-day-accent) !important;
+	}
+
+	/* Everything else: one shaded content block per row */
+	.wc-schedule-table td:not(:first-child) {
+		background-color: var(--wc-cream-alt) !important;
+	}
+
+	.wc-session-title {
+		font-weight: 700;
+		margin-bottom: 4px;
+	}
+
+	.wc-schedule-table tr.wc-band td:not(:first-child) {
+		text-align: center;
+	}
+}

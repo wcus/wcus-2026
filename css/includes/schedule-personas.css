@@ -7,20 +7,9 @@
  * - Showcase Day = custom-color-10,
  * - Day 1 = custom-color-14, 
  * - Day 2 = contrast-3
-*/
-
-.wc-schedule-wrap {
-	--wc-cream: #f5e3d2;
-	--wc-cream-alt: #f5e3d2;
-	--wc-title: #3a1a34;
-	--wc-meta: #6b5f52;
-	--wc-day-accent: #3a1a34;
-
-	--wc-contributor: var(--wp--preset--color--custom-color-12);
-	--wc-showcase: var(--wp--preset--color--custom-color-10);
-	--wc-day-one: var(--wp--preset--color--custom-color-14);
-	--wc-day-two: var(--wp--preset--color--contrast-3);
-}
+ *
+ * Colors are set in Additional CSS since custom properties are stripped by sanitization.
+ */
 
 .wc-schedule-wrap h2 {
 	margin-top: 2.5rem;
@@ -49,23 +38,6 @@ table.wc-schedule-table {
 		background-color: var(--wc-day-accent);
 		border: 1px solid var(--wc-day-accent) !important;
 	}
-}
-
-/* Per-day header colors, and matching border color per day */
-.wc-day-contributor {
-	--wc-day-accent: var(--wc-contributor);
-}
-
-.wc-day-showcase {
-	--wc-day-accent: var(--wc-showcase);
-}
-
-.wc-day-one {
-	--wc-day-accent: var(--wc-day-one);
-}
-
-.wc-day-two {
-	--wc-day-accent: var(--wc-day-two);
 }
 
 .wc-schedule-table td {

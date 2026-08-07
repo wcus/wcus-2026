@@ -592,39 +592,39 @@ footer.wp-block-template-part { margin-top: 0; }
 	font-weight: 600;
 }
 
-#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__column-header {
+[id^="wordcamp-schedule__day-2026-08-16"] .wordcamp-schedule__column-header {
 		background: var(--wp--preset--color--custom-color-12);
 		color: var(--wp--preset--color--white);
 	}
 
-#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-16-tracks-50-48 .wordcamp-schedule__session {
+[id^="wordcamp-schedule__day-2026-08-16"] .wordcamp-schedule__day,[id^="wordcamp-schedule__day-2026-08-16"] .wordcamp-schedule__time-slot-header,[id^="wordcamp-schedule__day-2026-08-16"] .wordcamp-schedule__session {
 		outline: 1px solid var(--wp--preset--color--custom-color-12);
 	}
 
-#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__column-header {
+[id^="wordcamp-schedule__day-2026-08-17"] .wordcamp-schedule__column-header {
 	background: var(--wp--preset--color--custom-color-10);
 	color: var(--wp--preset--color--white);
 	}
 
-#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-17-tracks-all .wordcamp-schedule__session {
+[id^="wordcamp-schedule__day-2026-08-17"] .wordcamp-schedule__day,[id^="wordcamp-schedule__day-2026-08-17"] .wordcamp-schedule__time-slot-header,[id^="wordcamp-schedule__day-2026-08-17"] .wordcamp-schedule__session {
 		outline: 1px solid var(--wp--preset--color--custom-color-10);
 	}
 
-#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__column-header {
+[id^="wordcamp-schedule__day-2026-08-18"] .wordcamp-schedule__column-header {
 	background: var(--wp--preset--color--custom-color-14);
 	color: var(--wp--preset--color--white);
 	}
 
-#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-18-tracks-all .wordcamp-schedule__session {
+[id^="wordcamp-schedule__day-2026-08-18"] .wordcamp-schedule__day,[id^="wordcamp-schedule__day-2026-08-18"] .wordcamp-schedule__time-slot-header,[id^="wordcamp-schedule__day-2026-08-18"] .wordcamp-schedule__session {
 		outline: 1px solid var(--wp--preset--color--custom-color-14);
 	}
 
-#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__column-header {
+[id^="wordcamp-schedule__day-2026-08-19"] .wordcamp-schedule__column-header {
 		background: var(--wp--preset--color--contrast-3);
 		color: var(--wp--preset--color--white);
 	}
 
-#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__day,#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__time-slot-header,#wordcamp-schedule__day-2026-08-19-tracks-all .wordcamp-schedule__session {
+[id^="wordcamp-schedule__day-2026-08-19"] .wordcamp-schedule__day,[id^="wordcamp-schedule__day-2026-08-19"] .wordcamp-schedule__time-slot-header,[id^="wordcamp-schedule__day-2026-08-19"] .wordcamp-schedule__session {
 		outline: 1px solid var(--wp--preset--color--contrast-3);
 	}
 

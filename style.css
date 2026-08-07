@@ -728,6 +728,17 @@ footer.wp-block-template-part { margin-top: 0; }
 		font-style: normal;
 	}
 
+/* Replace time on Registration items */
+
+:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration-2,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration-3,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration-4) > p {
+			font-size: 0;
+		}
+
+:is(:is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration-2,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration-3,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-registration-4) > p)::after {
+				content: '8:00am - 5:00pm';
+				font-size: 0.9rem;
+			}
+
 @media (max-width: 1000px) {
 
 		.wordcamp-schedule:not(#hack) .wordcamp-schedule__day {

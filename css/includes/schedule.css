@@ -20,7 +20,7 @@
 [id^="wordcamp-schedule__day-2026-08-16"] {
 
 	& .wordcamp-schedule__column-header {
-		background: var(--wp--preset--color--custom-color-12);
+		background: var(--wp--preset--color--custom-color-12) !important;
 		color: var(--wp--preset--color--white);
 	}
 
@@ -34,8 +34,8 @@
 [id^="wordcamp-schedule__day-2026-08-17"] {
 
 	& .wordcamp-schedule__column-header {
-	background: var(--wp--preset--color--custom-color-10);
-	color: var(--wp--preset--color--white);
+		background: var(--wp--preset--color--custom-color-10) !important;
+		color: var(--wp--preset--color--white);
 	}
 
 	& .wordcamp-schedule__day,
@@ -48,8 +48,8 @@
 [id^="wordcamp-schedule__day-2026-08-18"] {
 
 	& .wordcamp-schedule__column-header {
-	background: var(--wp--preset--color--custom-color-14);
-	color: var(--wp--preset--color--white);
+		background: var(--wp--preset--color--custom-color-14) !important;
+		color: var(--wp--preset--color--white);
 	}
 
 	& .wordcamp-schedule__day,
@@ -62,7 +62,7 @@
 [id^="wordcamp-schedule__day-2026-08-19"] {
 
 	& .wordcamp-schedule__column-header {
-		background: var(--wp--preset--color--contrast-3);
+		background: var(--wp--preset--color--contrast-3) !important;
 		color: var(--wp--preset--color--white);
 	}
 

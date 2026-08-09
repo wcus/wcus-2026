@@ -196,6 +196,11 @@
 		}
 	}
 
+	/* Remove redundant "keynote" category on keynotes */
+	& .wordcamp-schedule__session.has-category-keynote .wordcamp-schedule__session-category {
+		display: none;
+	}
+
 	@media (max-width: 1000px) {
 
 		& .wordcamp-schedule__day {

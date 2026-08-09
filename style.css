@@ -739,6 +739,12 @@ footer.wp-block-template-part { margin-top: 0; }
 				font-size: 0.9rem;
 			}
 
+/* Remove redundant "keynote" category on keynotes */
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-keynote .wordcamp-schedule__session-category {
+		display: none;
+	}
+
 @media (max-width: 1000px) {
 
 		.wordcamp-schedule:not(#hack) .wordcamp-schedule__day {

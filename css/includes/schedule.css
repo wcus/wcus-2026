@@ -201,6 +201,8 @@
 
 	/* Handle keynotes */
 	& .wordcamp-schedule__session.has-category-keynote {
+		padding-block-end: 1.7rem !important;
+		padding-inline-end: 2.5rem !important;
 
 		* {
 			position: relative;

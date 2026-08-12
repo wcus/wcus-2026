@@ -744,6 +744,11 @@ footer.wp-block-template-part { margin-top: 0; }
 
 /* Handle keynotes */
 
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-keynote {
+		padding-block-end: 1.7rem !important;
+		padding-inline-end: 2.5rem !important;
+	}
+
 :is(.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-keynote) * {
 			position: relative;
 			z-index: 1;

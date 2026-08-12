@@ -790,6 +790,10 @@ footer.wp-block-template-part { margin-top: 0; }
 			font-size: 1em;
 			background-color: var(--wp--preset--color--base-2);
 		}
+
+		.wordcamp-schedule:not(#hack) .wordcamp-schedule__session-tracks {
+      display: block;
+    }
 	}
 
 @media (max-width: 600px) {
